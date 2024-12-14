@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlinJvm)
+    application
 }
 
 val kotlinVersion = libs.versions.kotlin.get().parseToKotlinVersion()
@@ -45,6 +46,10 @@ kotlin {
         newSrcDirs += targetVersionSpecificSrcDir
         sourceSet.kotlin.setSrcDirs(newSrcDirs)
     }
+}
+
+application {
+    mainClass = "MainKt"
 }
 
 data class KotlinVersion(
