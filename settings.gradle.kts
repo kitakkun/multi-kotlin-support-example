@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 }
 
 include(":multi-kotlin-module")
+include(":multi-kotlin-gradle-plugin")

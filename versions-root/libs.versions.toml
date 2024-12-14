@@ -1,5 +1,14 @@
 [versions]
 kotlin = "2.1.0"
+gradle-testkit-support = "0.10"
+gradle-testkit-truth = "1.6.1"
+
+[libraries]
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+gradle-testkit-support = { module = "com.autonomousapps:gradle-testkit-support", version.ref = "gradle-testkit-support" }
+gradle-testkit-truth = { module = "com.autonomousapps:gradle-testkit-truth", version.ref = "gradle-testkit-truth" }
 
 [plugins]
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradleTestKitSupportPlugin = { id = "com.autonomousapps.testkit", version.ref = "gradle-testkit-support" }
